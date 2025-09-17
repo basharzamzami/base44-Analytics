@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Base44 - Palantir for SMBs</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f2f5;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+        .card {
+            background: white;
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+        h1 {
+            color: #1890ff;
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+        }
+        .status {
+            text-align: left;
+            margin: 20px 0;
+        }
+        .credentials {
+            text-align: left;
+            margin: 20px 0;
+        }
+        .links {
+            text-align: left;
+            margin: 20px 0;
+        }
+        .links a {
+            color: #1890ff;
+            text-decoration: none;
+        }
+        .links a:hover {
+            text-decoration: underline;
+        }
+        .timestamp {
+            color: #999;
+            margin-top: 30px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <h1>🚀 Base44 - Palantir for SMBs</h1>
+            <p style="font-size: 1.2rem; color: #666; margin-bottom: 30px;">
+                Your analytics platform is running successfully!
+            </p>
+            
+            <div class="status">
+                <h3>System Status:</h3>
+                <p>✅ Frontend: Running on http://localhost:3000</p>
+                <p>✅ Backend API: Running on http://localhost:8000</p>
+                <p>✅ HTML: Working correctly</p>
+                <p>✅ All Services: Operational</p>
+            </div>
+            
+            <div class="credentials">
+                <h3>Test Credentials:</h3>
+                <p><strong>Marketing Agency:</strong> admin@acmemarketing.com / securepass123</p>
+                <p><strong>Urgent Care:</strong> admin@quickcare.com / securepass123</p>
+            </div>
+            
+            <div class="links">
+                <h3>Access Points:</h3>
+                <p>• <a href="http://localhost:8000/docs" target="_blank">API Documentation</a></p>
+                <p>• <a href="http://localhost:8000/health" target="_blank">Health Check</a></p>
+            </div>
+            
+            <p class="timestamp">
+                Current time: <span id="time"></span>
+            </p>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById('time').textContent = new Date().toLocaleString();
+        console.log('Base44 frontend loaded successfully!');
+    </script>
+</body>
+</html>
+

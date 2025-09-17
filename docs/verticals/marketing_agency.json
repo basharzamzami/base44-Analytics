@@ -1,0 +1,122 @@
+{
+  "name": "Marketing Agency",
+  "description": "Ontology for marketing agencies and digital marketing companies",
+  "version": "1.0.0",
+  "entities": {
+    "lead": {
+      "description": "Potential customer or prospect",
+      "fields": {
+        "id": {"type": "string", "required": true, "description": "Unique lead identifier"},
+        "email": {"type": "string", "required": true, "description": "Lead email address"},
+        "full_name": {"type": "string", "required": false, "description": "Lead full name"},
+        "company": {"type": "string", "required": false, "description": "Company name"},
+        "phone": {"type": "string", "required": false, "description": "Phone number"},
+        "source": {"type": "string", "required": false, "description": "Lead source (website, social, referral)"},
+        "status": {"type": "string", "required": false, "description": "Lead status (new, qualified, converted)"},
+        "created_at": {"type": "datetime", "required": true, "description": "Lead creation timestamp"},
+        "converted_at": {"type": "datetime", "required": false, "description": "Conversion timestamp"},
+        "value": {"type": "float", "required": false, "description": "Lead value or deal size"}
+      }
+    },
+    "campaign": {
+      "description": "Marketing campaign",
+      "fields": {
+        "id": {"type": "string", "required": true, "description": "Campaign identifier"},
+        "name": {"type": "string", "required": true, "description": "Campaign name"},
+        "type": {"type": "string", "required": true, "description": "Campaign type (email, social, search, display)"},
+        "status": {"type": "string", "required": true, "description": "Campaign status (active, paused, completed)"},
+        "budget": {"type": "float", "required": false, "description": "Campaign budget"},
+        "start_date": {"type": "date", "required": true, "description": "Campaign start date"},
+        "end_date": {"type": "date", "required": false, "description": "Campaign end date"},
+        "created_at": {"type": "datetime", "required": true, "description": "Campaign creation timestamp"}
+      }
+    },
+    "ad": {
+      "description": "Individual advertisement",
+      "fields": {
+        "id": {"type": "string", "required": true, "description": "Ad identifier"},
+        "campaign_id": {"type": "string", "required": true, "description": "Parent campaign ID"},
+        "platform": {"type": "string", "required": true, "description": "Ad platform (google, facebook, linkedin)"},
+        "ad_group": {"type": "string", "required": false, "description": "Ad group name"},
+        "headline": {"type": "string", "required": false, "description": "Ad headline"},
+        "description": {"type": "string", "required": false, "description": "Ad description"},
+        "status": {"type": "string", "required": true, "description": "Ad status (active, paused, disapproved)"},
+        "created_at": {"type": "datetime", "required": true, "description": "Ad creation timestamp"}
+      }
+    }
+  },
+  "relationships": {
+    "campaign_leads": {
+      "from": "campaign",
+      "to": "lead",
+      "type": "generates",
+      "description": "Campaign generates leads"
+    },
+    "ad_leads": {
+      "from": "ad",
+      "to": "lead",
+      "type": "generates",
+      "description": "Ad generates leads"
+    },
+    "campaign_ads": {
+      "from": "campaign",
+      "to": "ad",
+      "type": "contains",
+      "description": "Campaign contains ads"
+    }
+  },
+  "kpis": {
+    "lead_conversion_rate": {
+      "name": "Lead Conversion Rate",
+      "description": "Percentage of leads that convert to customers",
+      "formula": "converted_leads / total_leads * 100",
+      "unit": "percentage",
+      "target": 15.0
+    },
+    "cost_per_lead": {
+      "name": "Cost Per Lead",
+      "description": "Average cost to acquire a lead",
+      "formula": "total_spend / total_leads",
+      "unit": "currency",
+      "target": 25.0
+    },
+    "lead_quality_score": {
+      "name": "Lead Quality Score",
+      "description": "Average quality score of leads",
+      "formula": "sum(lead_scores) / count(leads)",
+      "unit": "score",
+      "target": 7.5
+    },
+    "campaign_roi": {
+      "name": "Campaign ROI",
+      "description": "Return on investment for campaigns",
+      "formula": "(revenue - cost) / cost * 100",
+      "unit": "percentage",
+      "target": 300.0
+    }
+  },
+  "alert_rules": {
+    "low_conversion_rate": {
+      "name": "Low Conversion Rate Alert",
+      "description": "Alert when conversion rate drops below threshold",
+      "kpi": "lead_conversion_rate",
+      "condition": "< 10%",
+      "severity": "high"
+    },
+    "high_cost_per_lead": {
+      "name": "High Cost Per Lead Alert",
+      "description": "Alert when cost per lead exceeds budget",
+      "kpi": "cost_per_lead",
+      "condition": "> $50",
+      "severity": "medium"
+    },
+    "campaign_overspend": {
+      "name": "Campaign Overspend Alert",
+      "description": "Alert when campaign exceeds budget",
+      "kpi": "campaign_spend",
+      "condition": "> budget * 1.1",
+      "severity": "high"
+    }
+  }
+}
+

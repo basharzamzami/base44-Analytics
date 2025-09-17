@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Base44 Test</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+            background-color: #f0f2f5;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+        .success {
+            color: #52c41a;
+        }
+        .error {
+            color: #ff4d4f;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🚀 Base44 - Palantir for SMBs</h1>
+        <h2>System Test</h2>
+        
+        <div id="status">
+            <p class="success">✅ HTML is loading correctly</p>
+            <p class="success">✅ CSS is working</p>
+            <p id="js-test" class="error">❌ JavaScript test pending...</p>
+        </div>
+        
+        <div>
+            <h3>Services Status:</h3>
+            <p>Frontend: Running on port 3000</p>
+            <p>Backend: Running on port 8000</p>
+            <p>Current time: <span id="time"></span></p>
+        </div>
+        
+        <div>
+            <h3>Next Steps:</h3>
+            <ol>
+                <li>If you can see this page, the frontend server is working</li>
+                <li>Test the backend API at <a href="http://localhost:8000/health" target="_blank">http://localhost:8000/health</a></li>
+                <li>Check the main app at <a href="http://localhost:3000/" target="_blank">http://localhost:3000/</a></li>
+            </ol>
+        </div>
+    </div>
+
+    <script>
+        // Test JavaScript
+        document.getElementById('time').textContent = new Date().toLocaleString();
+        document.getElementById('js-test').innerHTML = '<span class="success">✅ JavaScript is working</span>';
+        
+        // Test API connectivity
+        fetch('http://localhost:8000/health')
+            .then(response => response.json())
+            .then(data => {
+                const apiStatus = document.createElement('p');
+                apiStatus.innerHTML = '<span class="success">✅ Backend API is accessible</span>';
+                document.getElementById('status').appendChild(apiStatus);
+            })
+            .catch(error => {
+                const apiStatus = document.createElement('p');
+                apiStatus.innerHTML = '<span class="error">❌ Backend API connection failed</span>';
+                document.getElementById('status').appendChild(apiStatus);
+            });
+    </script>
+</body>
+</html>
+
+

@@ -1,0 +1,22 @@
+id,email,full_name,company,phone,source,status,created_at,converted_at,value,quality_score
+lead_001,john.doe@techcorp.com,John Doe,TechCorp Inc,+1-555-0101,website,converted,2024-01-10T09:30:00Z,2024-01-15T14:20:00Z,5000.00,8.5
+lead_002,jane.smith@startup.io,Jane Smith,StartupIO,+1-555-0102,google_ads,qualified,2024-01-11T10:15:00Z,,2500.00,7.2
+lead_003,bob.wilson@enterprise.com,Bob Wilson,Enterprise Corp,+1-555-0103,linkedin,new,2024-01-12T11:45:00Z,,,6.8
+lead_004,alice.brown@smallbiz.com,Alice Brown,SmallBiz LLC,+1-555-0104,referral,converted,2024-01-13T08:20:00Z,2024-01-18T16:30:00Z,1200.00,7.9
+lead_005,charlie.davis@local.com,Charlie Davis,Local Business,+1-555-0105,facebook,qualified,2024-01-14T13:10:00Z,,800.00,6.5
+lead_006,diana.garcia@global.com,Diana Garcia,Global Inc,+1-555-0106,website,new,2024-01-15T09:30:00Z,,,7.1
+lead_007,edward.martinez@tech.com,Edward Martinez,Tech Solutions,+1-555-0107,google_ads,converted,2024-01-16T14:45:00Z,2024-01-20T11:15:00Z,3500.00,8.2
+lead_008,fiona.anderson@startup.com,Fiona Anderson,StartupCo,+1-555-0108,linkedin,qualified,2024-01-17T10:30:00Z,,1800.00,7.6
+lead_009,george.taylor@enterprise.com,George Taylor,Enterprise Solutions,+1-555-0109,website,new,2024-01-18T12:00:00Z,,,6.9
+lead_010,helen.thomas@small.com,Helen Thomas,Small Company,+1-555-0110,referral,converted,2024-01-19T15:20:00Z,2024-01-22T09:45:00Z,950.00,8.1
+lead_011,ivan.rodriguez@tech.io,Ivan Rodriguez,TechCorp,+1-555-0111,google_ads,qualified,2024-01-20T11:15:00Z,,3200.00,7.8
+lead_012,julia.wilson@startup.net,Julia Wilson,StartupIO,+1-555-0112,facebook,new,2024-01-21T14:30:00Z,,,6.7
+lead_013,kevin.brown@enterprise.org,Kevin Brown,Enterprise Inc,+1-555-0113,linkedin,converted,2024-01-22T09:45:00Z,2024-01-25T16:20:00Z,4200.00,8.3
+lead_014,lisa.garcia@smallbiz.com,Lisa Garcia,SmallBiz Corp,+1-555-0114,website,qualified,2024-01-23T13:20:00Z,,1500.00,7.4
+lead_015,mike.davis@local.net,Mike Davis,Local Services,+1-555-0115,referral,new,2024-01-24T10:45:00Z,,,6.3
+lead_016,nancy.martinez@global.io,Nancy Martinez,Global Solutions,+1-555-0116,google_ads,converted,2024-01-25T15:30:00Z,2024-01-28T12:10:00Z,2800.00,7.9
+lead_017,oscar.anderson@tech.com,Oscar Anderson,TechStart,+1-555-0117,facebook,qualified,2024-01-26T12:15:00Z,,2100.00,7.5
+lead_018,patricia.taylor@startup.org,Patricia Taylor,StartupHub,+1-555-0118,linkedin,new,2024-01-27T11:30:00Z,,,6.8
+lead_019,quinn.thomas@enterprise.net,Quinn Thomas,Enterprise Group,+1-555-0119,website,converted,2024-01-28T14:45:00Z,2024-01-30T10:30:00Z,3800.00,8.0
+lead_020,rachel.rodriguez@small.com,Rachel Rodriguez,SmallBiz Inc,+1-555-0120,referral,qualified,2024-01-29T09:20:00Z,,1200.00,7.3
+

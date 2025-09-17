@@ -1,0 +1,12 @@
+id,email,full_name,company,phone,source,status,created_at,converted_at,value
+lead_001,john.doe@techcorp.com,John Doe,TechCorp Inc,+1-555-0101,website,converted,2024-01-10T09:30:00Z,2024-01-15T14:20:00Z,5000.00
+lead_002,jane.smith@startup.io,Jane Smith,StartupIO,+1-555-0102,google_ads,qualified,2024-01-11T10:15:00Z,,2500.00
+lead_003,bob.wilson@enterprise.com,Bob Wilson,Enterprise Corp,+1-555-0103,linkedin,new,2024-01-12T11:45:00Z,,
+lead_004,alice.brown@smallbiz.com,Alice Brown,SmallBiz LLC,+1-555-0104,referral,converted,2024-01-13T08:20:00Z,2024-01-18T16:30:00Z,1200.00
+lead_005,charlie.davis@local.com,Charlie Davis,Local Business,+1-555-0105,facebook,qualified,2024-01-14T13:10:00Z,,800.00
+lead_006,diana.garcia@global.com,Diana Garcia,Global Inc,+1-555-0106,website,new,2024-01-15T09:30:00Z,,
+lead_007,edward.martinez@tech.com,Edward Martinez,Tech Solutions,+1-555-0107,google_ads,converted,2024-01-16T14:45:00Z,2024-01-20T11:15:00Z,3500.00
+lead_008,fiona.anderson@startup.com,Fiona Anderson,StartupCo,+1-555-0108,linkedin,qualified,2024-01-17T10:30:00Z,,1800.00
+lead_009,george.taylor@enterprise.com,George Taylor,Enterprise Solutions,+1-555-0109,website,new,2024-01-18T12:00:00Z,,
+lead_010,helen.thomas@small.com,Helen Thomas,Small Company,+1-555-0110,referral,converted,2024-01-19T15:20:00Z,2024-01-22T09:45:00Z,950.00
+

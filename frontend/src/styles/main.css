@@ -1,0 +1,276 @@
+/* Base44 Frontend Styles */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #f0f2f5;
+}
+
+.app {
+  min-height: 100vh;
+}
+
+/* Login Styles */
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+
+.login-content {
+  width: 100%;
+  max-width: 400px;
+  padding: 20px;
+}
+
+.login-card {
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+  border: none;
+}
+
+.login-header {
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+.login-header h1 {
+  font-size: 32px;
+  font-weight: 700;
+  color: #1890ff;
+  margin-bottom: 8px;
+}
+
+.login-header p {
+  color: #666;
+  font-size: 16px;
+}
+
+/* Dashboard Styles */
+.dashboard-layout {
+  min-height: 100vh;
+}
+
+.dashboard-header {
+  background: #001529;
+  padding: 0 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.header-actions {
+  display: flex;
+  align-items: center;
+}
+
+.dashboard-sider {
+  background: #fff;
+  border-right: 1px solid #f0f0f0;
+}
+
+.sider-content {
+  padding: 24px;
+}
+
+.dashboard-content {
+  padding: 24px;
+  background: #f0f2f5;
+}
+
+/* Loading Styles */
+.loading-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 200px;
+}
+
+.loading-container p {
+  margin-top: 16px;
+  color: #666;
+}
+
+/* Card Styles */
+.ant-card {
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+}
+
+.ant-card-head {
+  border-bottom: 1px solid #f0f0f0;
+}
+
+/* Button Styles */
+.ant-btn {
+  border-radius: 6px;
+}
+
+.ant-btn-primary {
+  background: #1890ff;
+  border-color: #1890ff;
+}
+
+.ant-btn-primary:hover {
+  background: #40a9ff;
+  border-color: #40a9ff;
+}
+
+/* Table Styles */
+.ant-table {
+  border-radius: 8px;
+}
+
+.ant-table-thead > tr > th {
+  background: #fafafa;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+/* Form Styles */
+.ant-form-item-label > label {
+  font-weight: 500;
+}
+
+.ant-input,
+.ant-input-password,
+.ant-select-selector {
+  border-radius: 6px;
+}
+
+/* Tag Styles */
+.ant-tag {
+  border-radius: 4px;
+  font-size: 12px;
+}
+
+/* Alert Styles */
+.ant-alert {
+  border-radius: 6px;
+}
+
+/* Graph Explorer Styles */
+.graph-container {
+  background: #fafafa;
+  position: relative;
+}
+
+.graph-node {
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.graph-node:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Assistant Styles */
+.assistant {
+  height: 100vh;
+}
+
+.assistant .ant-card {
+  height: 100%;
+}
+
+.assistant .ant-card-body {
+  height: calc(100% - 57px);
+  padding: 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .dashboard-header {
+    padding: 0 16px;
+  }
+  
+  .dashboard-content {
+    padding: 16px;
+  }
+  
+  .sider-content {
+    padding: 16px;
+  }
+  
+  .login-content {
+    padding: 16px;
+  }
+}
+
+@media (max-width: 576px) {
+  .header-content {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .header-actions {
+    margin-top: 8px;
+  }
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #c1c1c1;
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #a8a8a8;
+}
+
+/* Animation Classes */
+.fade-in {
+  animation: fadeIn 0.3s ease-in;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.slide-in {
+  animation: slideIn 0.3s ease-out;
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}

@@ -1,0 +1,22 @@
+id,incident_type,location,reported_at,response_time_minutes,officer_id,status,severity,description,victim_count,suspect_count,evidence_count
+incident_001,Theft,123 Main St,2024-01-10T08:30:00Z,5,OFF001,investigating,medium,Shoplifting at local store,0,1,2
+incident_002,Traffic violation,456 Oak Ave,2024-01-11T14:15:00Z,3,OFF002,resolved,low,Speed violation,0,1,0
+incident_003,Assault,789 Pine St,2024-01-12T20:45:00Z,8,OFF003,investigating,high,Physical altercation,1,1,3
+incident_004,Burglary,321 Elm St,2024-01-13T02:20:00Z,12,OFF004,investigating,high,Residential break-in,1,2,4
+incident_005,Vandalism,654 Maple Dr,2024-01-14T16:30:00Z,6,OFF005,resolved,low,Graffiti on building,0,1,1
+incident_006,Domestic dispute,987 Cedar Ln,2024-01-15T19:15:00Z,7,OFF006,investigating,medium,Family disturbance,2,1,2
+incident_007,Drug possession,147 Birch St,2024-01-16T11:45:00Z,4,OFF007,resolved,medium,Found drugs during traffic stop,0,1,1
+incident_008,Robbery,258 Spruce Ave,2024-01-17T21:30:00Z,10,OFF008,investigating,high,Armed robbery at gas station,1,2,5
+incident_009,Public intoxication,369 Willow Way,2024-01-18T15:20:00Z,3,OFF009,resolved,low,Drunk person causing disturbance,0,1,0
+incident_010,Property damage,741 Ash Blvd,2024-01-19T13:10:00Z,5,OFF010,investigating,medium,Vehicle damage,1,1,2
+incident_011,Theft,852 Poplar St,2024-01-20T09:25:00Z,6,OFF011,resolved,low,Purse snatching,1,1,1
+incident_012,Traffic accident,963 Hickory Rd,2024-01-21T17:40:00Z,8,OFF012,investigating,medium,Two-car collision,2,0,3
+incident_013,Assault,159 Sycamore Ln,2024-01-22T22:15:00Z,9,OFF013,investigating,high,Bar fight,1,2,2
+incident_014,Burglary,357 Dogwood Dr,2024-01-23T03:45:00Z,11,OFF014,investigating,high,Commercial break-in,0,2,6
+incident_015,Vandalism,468 Magnolia Ave,2024-01-24T12:30:00Z,4,OFF015,resolved,low,Car vandalism,1,1,1
+incident_016,Domestic dispute,579 Cherry St,2024-01-25T18:45:00Z,6,OFF016,investigating,medium,Neighbor dispute,2,2,1
+incident_017,Drug possession,680 Walnut Way,2024-01-26T14:20:00Z,5,OFF017,resolved,medium,Drug paraphernalia found,0,1,2
+incident_018,Robbery,791 Chestnut Blvd,2024-01-27T23:10:00Z,13,OFF018,investigating,high,Convenience store robbery,1,1,4
+incident_019,Public intoxication,892 Oak Ridge,2024-01-28T16:55:00Z,2,OFF019,resolved,low,Intoxicated person in park,0,1,0
+incident_020,Property damage,903 Pine Valley,2024-01-29T10:15:00Z,7,OFF020,investigating,medium,Window broken,1,1,1
+

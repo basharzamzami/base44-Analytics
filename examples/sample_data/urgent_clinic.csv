@@ -1,0 +1,22 @@
+id,first_name,last_name,date_of_birth,phone,email,insurance_provider,insurance_id,emergency_contact,visit_date,chief_complaint,wait_time_minutes,treatment_time_minutes,total_cost,insurance_coverage
+patient_001,John,Smith,1985-03-15,+1-555-0201,john.smith@email.com,BlueCross,BC123456789,+1-555-0202,2024-01-10T08:00:00Z,Chest pain,25,30,150.00,0.85
+patient_002,Jane,Doe,1990-07-22,+1-555-0203,jane.doe@email.com,Aetna,AET987654321,+1-555-0204,2024-01-11T09:15:00Z,Fever,35,25,120.00,0.90
+patient_003,Bob,Johnson,1978-11-08,+1-555-0205,bob.johnson@email.com,Cigna,CIG456789123,+1-555-0206,2024-01-12T10:30:00Z,Injury,20,45,200.00,0.80
+patient_004,Alice,Williams,1992-05-14,+1-555-0207,alice.williams@email.com,UnitedHealth,UH789123456,+1-555-0208,2024-01-13T11:45:00Z,Headache,40,20,100.00,0.95
+patient_005,Charlie,Brown,1988-09-03,+1-555-0209,charlie.brown@email.com,BlueCross,BC987654321,+1-555-0210,2024-01-14T12:00:00Z,Stomach pain,30,35,180.00,0.88
+patient_006,Diana,Davis,1995-12-18,+1-555-0211,diana.davis@email.com,Aetna,AET123456789,+1-555-0212,2024-01-15T13:15:00Z,Allergic reaction,15,40,250.00,0.92
+patient_007,Edward,Miller,1982-04-25,+1-555-0213,edward.miller@email.com,Cigna,CIG789123456,+1-555-0214,2024-01-16T14:30:00Z,Back pain,50,30,160.00,0.75
+patient_008,Fiona,Wilson,1991-08-12,+1-555-0215,fiona.wilson@email.com,UnitedHealth,UH456789123,+1-555-0216,2024-01-17T15:45:00Z,Cough,25,25,110.00,0.90
+patient_009,George,Moore,1987-01-30,+1-555-0217,george.moore@email.com,BlueCross,BC456789123,+1-555-0218,2024-01-18T16:00:00Z,Anxiety,35,20,130.00,0.85
+patient_010,Helen,Taylor,1993-06-07,+1-555-0219,helen.taylor@email.com,Aetna,AET789123456,+1-555-0220,2024-01-19T17:15:00Z,Sprain,20,35,170.00,0.88
+patient_011,Ivan,Rodriguez,1980-09-15,+1-555-0221,ivan.rodriguez@email.com,Cigna,CIG123456789,+1-555-0222,2024-01-20T08:30:00Z,High blood pressure,45,40,220.00,0.82
+patient_012,Julia,Garcia,1994-02-28,+1-555-0223,julia.garcia@email.com,UnitedHealth,UH789456123,+1-555-0224,2024-01-21T09:45:00Z,Infection,30,25,140.00,0.90
+patient_013,Kevin,Martinez,1979-12-10,+1-555-0225,kevin.martinez@email.com,BlueCross,BC789123456,+1-555-0226,2024-01-22T10:20:00Z,Dehydration,15,30,120.00,0.95
+patient_014,Lisa,Anderson,1986-05-03,+1-555-0227,lisa.anderson@email.com,Aetna,AET456789123,+1-555-0228,2024-01-23T11:10:00Z,Minor burn,25,20,90.00,0.88
+patient_015,Mike,Thomas,1991-08-17,+1-555-0229,mike.thomas@email.com,Cigna,CIG789456123,+1-555-0230,2024-01-24T12:35:00Z,Eye irritation,40,15,80.00,0.85
+patient_016,Nancy,Jackson,1983-11-22,+1-555-0231,nancy.jackson@email.com,UnitedHealth,UH123789456,+1-555-0232,2024-01-25T13:50:00Z,Panic attack,35,45,190.00,0.80
+patient_017,Oscar,White,1989-04-08,+1-555-0233,oscar.white@email.com,BlueCross,BC456123789,+1-555-0234,2024-01-26T14:15:00Z,Minor cut,20,25,95.00,0.92
+patient_018,Patricia,Harris,1992-07-14,+1-555-0235,patricia.harris@email.com,Aetna,AET789456123,+1-555-0236,2024-01-27T15:30:00Z,Food poisoning,30,35,150.00,0.87
+patient_019,Quinn,Martin,1985-10-29,+1-555-0237,quinn.martin@email.com,Cigna,CIG456789123,+1-555-0238,2024-01-28T16:45:00Z,Sprained ankle,25,30,160.00,0.89
+patient_020,Rachel,Thompson,1988-01-12,+1-555-0239,rachel.thompson@email.com,UnitedHealth,UH789123456,+1-555-0240,2024-01-29T17:20:00Z,Migraine,45,25,135.00,0.83
+
